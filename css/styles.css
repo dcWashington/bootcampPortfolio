@@ -1,23 +1,57 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
-h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+h1,
+h2,
+h3 {
+  font-family: "Roboto";
+}
 
 h2 {
-  color: #3046C5; }
+  color: black;
+}
 
-header h2 {
-  color: #CEC8FF; }
+header h2,
+h5 {
+  text-align: center;
+  color: white;
+}
 
-.site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
-
-.jumbotron {
+header {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-  color: white; }
+  color: white;
+  /* background-image: url("/images/sao-paulo1.jpg"); */
 
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(/images/sao-paulo2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/sao-paulo2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
 
+.btn-outline-success {
+  color: white;
+}
+
+.site-footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+}
+
+.hero-text-box {
+  /* position: absolute; */
+  /* width: 1140px; */
+  margin-top: 25%;
+  /* left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+}
