@@ -9,12 +9,6 @@ h3 {
 }
 
 h2 {
-  color: black;
-}
-
-header h2,
-h5 {
-  text-align: center;
   color: white;
 }
 
@@ -41,10 +35,6 @@ header {
   color: white;
 }
 
-.site-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px 0;
-}
 
 .hero-text-box {
   /* position: absolute; */
@@ -57,8 +47,21 @@ header {
 }
 
 #footer{
-  background-color: rgb(50, 33, 143);
+  background-image: url(/images/sao-paulo3.jpg);  
   color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px red;
   padding: 20px 0;
+}
 
+.title-padding{
+  padding: 40px 0;
+}
+
+#contact-us{
+  background-color: rgb(153, 153, 127);
+}
+
+.card-footer{
+  padding-bottom: 5px;
 }
