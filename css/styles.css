@@ -16,13 +16,7 @@ header {
   margin: 0;
   padding: 30px;
   color: white;
-  /* background-image: url("/images/sao-paulo1.jpg"); */
 
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(/images/sao-paulo2.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/images/sao-paulo2.jpg);
   background-size: cover;

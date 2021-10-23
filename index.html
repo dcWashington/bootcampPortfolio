@@ -22,55 +22,51 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-trasparent sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <!-- add logo image -->
-            <!-- <img
+        <!-- <div class="container"> -->
+        <a class="navbar-brand" href="#">
+          <!-- add logo image -->
+          <!-- <img
               src=""
               width="30"
               height="30"
               alt="Logo"
               class="d-inline-block align-text-center"
             /> -->
-            WdM Imóveis</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#siteNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="siteNavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Comprar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vender</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alugar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Financiamento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <span class="navbar-text ml-auto">
-              <a
-                class="text-nowrap"
-                role="button"
-                data-toggle=""
-                data-target="#"
-                ><i class="fa fa-whatsapp"></i> (11) 9123-4567</a
-              >
-            </span>
-          </div>
+          WdM Imóveis</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#siteNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Alugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financiamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+          <span class="navbar-text ml-auto">
+            <a class="text-nowrap" role="button" data-toggle="" data-target="#"
+              ><i class="fa fa-whatsapp"></i> (11) 9123-4567</a
+            >
+          </span>
         </div>
+        <!-- </div> -->
       </nav>
       <div class="hero-text-box text-center">
         <h2 class="mt-5">Portfolio: Realtor Website</h2>
@@ -78,29 +74,26 @@
           Don’t practice until you get it right. Practice until you can’t get it
           wrong.
         </h3>
-
-        <div class="container-fluid">
-          <label for="city" class="row form-label justify-content-center mt-5"
-            >Cidades</label
+      </div>
+      <div class="container-fluid">
+        <label for="city" class="row form-label justify-content-center mt-5"
+          >Cidades</label
+        >
+        <div class="row justify-content-sm-center">
+          <select class="form-select col-sm-5" id="inputCity">
+            <option selected>Pesquise por Cidade...</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Osasco">Osasco</option>
+            <option value="Jundiaí">Jundiaí</option>
+            <option value="Campinas">Campinas</option>
+            <option value="Praia Grande">Praia Grande</option>
+          </select>
+          <button
+            type="button"
+            class="btn btn-outline-success col-sm-2 ml-sm-2"
           >
-          <div class="row justify-content-sm-center">
-            <input
-              class="form-control col-sm-5"
-              list="cityOptions"
-              id="city"
-              placeholder="Pesquise por cidade..."
-            />
-            <datalist id="cityOptions">
-              <option value="São Paulo"></option>
-              <option value="Osasco"></option>
-              <option value="Jundiaí"></option>
-              <option value="Campinas"></option>
-              <option value="Praia Grande"></option>
-            </datalist>
-            <button type="button" class="btn btn-outline-success ml-2">
-              Pesquisar
-            </button>
-          </div>
+            Pesquisar
+          </button>
         </div>
       </div>
     </header>
@@ -108,101 +101,114 @@
     <!-- ===================== -->
     <!-- Featued Homes Section -->
     <!-- ===================== -->
-
-    <div class="featuredHomes">
-      <div>
-        <h1 class="text-center title-padding">Destaques</h1>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Imóveis em Destaque</h1>
+          <p class="lead text-muted">
+            Os melhores imóveis da região de Sao Paulo para você. Serviço
+            personalizado ao cliente. Consultoria, financiamento, compra, e
+            venda. Estou pronto a atende-lo.
+          </p>
+          <!-- assinatura em letra cursiva -->
+          <p class="">Waldemar Dela Marta</p>
+          <p>
+            <a href="#" class="btn btn-success my-2">Comprar Imóvel</a>
+            <a href="#" class="btn btn-primary my-2">Vender Imóvel</a>
+          </p>
+        </div>
       </div>
+    </section>
+
+    <div class="pb-5 px-5 featuredHomes">
       <div class="row row-cols-2 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/forSale.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house1.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">2 Quartos - Osasco</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri. Dicta vocent democritum pri ea, per ut dicat atqui placerat. Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-success">
+                  Mais Informações
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house6.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">2 Quartos - São Paulo</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri. Dicta vocent democritum pri ea, per ut dicat atqui placerat. Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-success">
+                  Mais Informações
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/forSale.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house3.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-success">
+                  Mais Informações
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house4.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-success">
+                  Mais Informações
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/forSale.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house5.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-sm btn-success">
+                  Mais Informações
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -268,9 +274,17 @@
         </div>
         <div class="col">
           <div class="contact-info text-center">
-            <p><i class="fa fa-whatsapp"></i> (11) xxxx-xxxx</a></p>
-            <p><i class="fa fa-whatsapp"></i> (11) xxxx-xxxx</a></p>
-            <p><i class="fa fa-envelope"></i> contato@xxxxxxxxx.com.br</a></p>
+            <p>
+              <a href=""><i class="fa fa-whatsapp"></i> (11) xxxx-xxxx</a>
+            </p>
+            <p>
+              <a href=""><i class="fa fa-whatsapp"></i> (11) xxxx-xxxx</a>
+            </p>
+            <p>
+              <a href=""
+                ><i class="fa fa-envelope"></i> contato@xxxxxxxxx.com.br</a
+              >
+            </p>
             <div class="social-icons">
               <h3>Redes Sociais</h3>
               <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -285,12 +299,12 @@
     <footer id="footer">
       <div class="container text-center">
         <p>
-          &copy; Nucamp Portfolio 2021. <a href="">Tiago & Washington</a>. Todos
-          direitos reservados.
+          &copy; Nucamp Portfolio 2021. <a href="">Thiago & Washington</a>.
+          Todos direitos reservados.
         </p>
       </div>
     </footer>
-    
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
