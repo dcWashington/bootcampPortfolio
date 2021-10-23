@@ -25,55 +25,51 @@
 
       <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-trasparent sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <!-- add logo image -->
-            <!-- <img
+        <!-- <div class="container"> -->
+        <a class="navbar-brand" href="#">
+          <!-- add logo image -->
+          <!-- <img
               src=""
               width="30"
               height="30"
               alt="Logo"
               class="d-inline-block align-text-center"
             /> -->
-            WdM Imóveis</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#siteNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="siteNavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Comprar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vender</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alugar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Financiamento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <span class="navbar-text ml-auto">
-              <a
-                class="text-nowrap"
-                role="button"
-                data-toggle=""
-                data-target="#"
-                ><i class="fa fa-whatsapp"></i> (11) 9123-4567</a
-              >
-            </span>
-          </div>
+          WdM Imóveis</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#siteNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Alugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financiamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+          <span class="navbar-text ml-auto">
+            <a class="text-nowrap" role="button" data-toggle="" data-target="#"
+              ><i class="fa fa-whatsapp"></i> (11) 9123-4567</a
+            >
+          </span>
         </div>
+        <!-- </div> -->
       </nav>
       <div class="hero-text-box text-center">
         <h2 class="mt-5">Portfolio: Realtor Website</h2>
@@ -87,24 +83,8 @@
           <label for="city" class="row form-label justify-content-center mt-5"
             >Cidades</label
           >
-          <div class="row justify-content-sm-center">
-            <input
-              class="form-control col-sm-5"
-              list="cityOptions"
-              id="city"
-              placeholder="Pesquise por cidade..."
-            />
-            <datalist id="cityOptions">
-              <option value="São Paulo"></option>
-              <option value="Osasco"></option>
-              <option value="Jundiaí"></option>
-              <option value="Campinas"></option>
-              <option value="Praia Grande"></option>
-            </datalist>
-            <button type="button" class="btn btn-outline-success ml-2">
-              Pesquisar
-            </button>
-          </div>
+            Pesquisar
+          </button>
         </div>
       </div>
     </header>
@@ -114,6 +94,9 @@
       <div>
         <h1 class="text-center title-padding">Destaques</h1>
       </div>
+    </section>
+
+    <div class="pb-5 px-5 featuredHomes">
       <div class="row row-cols-2 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
@@ -130,16 +113,18 @@
           <div class="card h-100">
             <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">2 Quartos - São Paulo</h5>
+              <h5 class="card-title text-center">2 Quartos - Osasco</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri. Dicta vocent democritum pri ea, per ut dicat atqui placerat. Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
+                Lorem ipsum dolor sit amet, quando eruditi tacimates eu pri.
+                Dicta vocent democritum pri ea, per ut dicat atqui placerat.
+                Quas soleat hendrerit at his, ut eos veritus expetendis, modus.
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/forSale.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house6.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">2 Quartos - São Paulo</h5>
               <p class="card-text">
@@ -148,9 +133,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house3.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">3 Quartos - Barueri</h5>
               <p class="card-text">
@@ -159,9 +144,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/forSale.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house4.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">4 Quartos - São Paulo</h5>
               <p class="card-text">
@@ -170,9 +155,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/soldHouse.jpg" class="card-img-top" alt="..." />
+        <div class="pb-5 col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/house5.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">5 Quartos - Barueri</h5>
               <p class="card-text">
