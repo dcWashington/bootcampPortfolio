@@ -53,14 +53,15 @@ header {
   padding: 20px 0;
 }
 
+.authorStyle{
+  color: rgb(236, 199, 199);
+  text-decoration: underline;
+}
+
 .title-padding {
   padding: 40px 0;
 }
 
 #contact-us {
   background-color: rgb(153, 153, 127);
-}
-
-.card-footer {
-  padding-bottom: 5px;
 }
