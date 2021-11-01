@@ -30,13 +30,7 @@ header {
 }
 
 .hero-text-box {
-  /* position: absolute; */
-  /* width: 1140px; */
   margin-top: 25%;
-  /* left: 50%; */
-  /* -webkit-transform: translate(-50%, -50%); */
-  /* -ms-transform: translate(-50%, -50%); */
-  /* transform: translate(-50%, -50%); */
 }
 
 #footer {
@@ -52,9 +46,36 @@ header {
 }
 
 #contact-us {
-  background-color: rgb(153, 153, 127);
+  /* background-color: rgb(153, 153, 127); */
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/sao-paulo1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .card-footer {
   padding-bottom: 5px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #4bb543;
+  text-decoration: none;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-whatsapp,
+.fa-envelope {
+  font-size: 30px;
+}
+
+.navwhatsapp {
+  font-size: 20px;
 }
