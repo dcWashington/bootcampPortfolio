@@ -41,6 +41,11 @@ header {
   padding: 20px 0;
 }
 
+.authorStyle {
+  color: rgb(236, 199, 199);
+  text-decoration: underline;
+}
+
 .title-padding {
   padding: 40px 0;
 }
@@ -54,28 +59,4 @@ header {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-}
-
-.card-footer {
-  padding-bottom: 5px;
-}
-
-a {
-  color: white;
-}
-
-a:hover {
-  color: #4bb543;
-  text-decoration: none;
-}
-
-.fa-instagram,
-.fa-facebook,
-.fa-whatsapp,
-.fa-envelope {
-  font-size: 30px;
-}
-
-.navwhatsapp {
-  font-size: 20px;
 }
